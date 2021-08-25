@@ -67,4 +67,25 @@ public class BankbookDAO {
 		}
 		return bookList;
 	}
+
+	public int setInsert(BankbookDTO bankbookDTO) {
+		Connection connection = null;
+		PreparedStatement preparedStatement = null;
+		int insert = 0;
+		try {
+			connection = dbConnector.getConnect();
+			String sql = "INSERT INTO BANKBOOK VALUES(bankbook_seq.nextval,?,?,?)";
+			preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setString(1, bankbookDTO.getBook_name());
+			preparedStatement.setDouble(2, bankbookDTO.getBook_rate());
+			preparedStatement.setInt(3, bankbookDTO.getBook_sale());
+			insert = preparedStatement.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return insert;
+	}
+
 }
