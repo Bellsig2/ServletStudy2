@@ -9,18 +9,10 @@
 </head>
 <body>
 	<h1>BankBook Select Page</h1>
-	<% 
-		/* session */
-		/* application */
-		/* page */
-		String num = request.getParameter("bookNumber");
-		Object obj = request.getAttribute("dto");
-		BankbookDTO bankbookDTO = (BankbookDTO)obj;
-	%>
-	<h3>num : <%= num %></h3>
-	<h3>Name : <%= bankbookDTO.getBook_name() %></h3>
-	<h3>이자율 : <%= bankbookDTO.getBook_number() %></h3>
-	<h3><%=bankbookDTO.getBook_rate() %></h3>
-	<h3><%= bankbookDTO.getBook_sale() %></h3>
+	<h3>num : ${requestScope.dto.book_number}</h3>
+	<h3>Name : ${requestScope.dto.book_name}</h3>
+	<h3>Count : ${count}</h3>
+	<h3>Name : ${name}</h3>
+	<h3>session : ${sessionScope.session}</h3>
 </body>
 </html>
