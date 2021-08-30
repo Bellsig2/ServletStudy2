@@ -25,3 +25,4 @@ hs_err_pid*
 # my
 DBConnector.java
 src/com/wookdongkang/s1/test/*
+src/main/webapp/member/memberJoin.jsp

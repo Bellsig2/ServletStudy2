@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+* {
+	
+	text-align: center;
+}
+
+h3 {
+	color: blue,	
+}
+
+a {
+	color:black;
+}
+
+#t1 {
+	color:lime;
+}
+
+/* #t3, h2 {
+	color:red;
+} */
+
+.c2 {
+	font-size : 50px;
+	color : red;
+}
+h1 {
+	fontsize :120px;
+	border-top-color: lime;
+	border-top-width: 5px;
+	border-top-style: dotted;
+	
+	border-right-color: red;
+	border-right-width:3px;
+	border-right-style: solid;
+	
+	border-bottom: blue solid 3px;
+	
+	border: red solid 2px;
+}

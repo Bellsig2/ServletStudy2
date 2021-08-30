@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+	margin: 0px;
+}
+
+.listTable {
+	border: 1px black solid;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.tableHeader {
+	border-bottom: 1px black solid;
+	border-collapse: collapse;
+}
+
+.tableBody {
+	border-bottom: 1px black solid;
+	border-right: 1px black solid;
+}
+
+.title {	
+	width: 70%;
+	margin: 0 auto;
+	background-color:yellow;
+	/* text-align: center; */
+}

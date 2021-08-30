@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.c1 {
+	border: 1px solid black;
+	width: 300px;
+	height: 300px;
+	/* background-color : red; */
+	/* padding-right: 30px */
+	/* padding:40px;
+	box-sizing: border-box; */
+	padding: 100px 100px 100px 100px;
+	box-sizing: border-box;
+	
+}
+
+.c1_1 {
+	width:100px;
+	height:100px;
+	background-color:black
+
+}
+
+.c2 {
+	border: 1px solid blue;
+	/* padding-top : 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right:10px; */
+	
+	/* padding : 10px 10px 10px 10px; */
+	
+	padding : 40px;
+}
